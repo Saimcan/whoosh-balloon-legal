@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whoosh Balloon — Delete Your Data</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 760px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #222;
+      line-height: 1.55;
+    }
+    h1 { font-size: 1.8rem; border-bottom: 2px solid #eee; padding-bottom: 0.4rem; }
+    h2 { font-size: 1.25rem; margin-top: 2rem; color: #0a4; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; font-size: 0.95rem; }
+    th { background: #f4f4f4; }
+    .contact { background: #f8f8f8; padding: 1rem; border-left: 3px solid #0a4; margin-top: 2rem; }
+    .steps { background: #f0faf4; padding: 1rem 1.5rem; border-radius: 6px; margin: 1rem 0; }
+    .steps ol { margin: 0.5rem 0; padding-left: 1.2rem; }
+    .steps li { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+
+<h1>Whoosh Balloon — Delete Your Data</h1>
+<p class="meta">Developer: Saimcan Sesigur</p>
+
+<h2>What data do we store?</h2>
+<p>Whoosh Balloon stores the following data on our servers (Firebase Realtime Database):</p>
+<table>
+  <tr><th>Data</th><th>Retention</th></tr>
+  <tr><td>Player ID (auto-generated anonymous token)</td><td>Until deletion requested</td></tr>
+  <tr><td>Display name (chosen by you)</td><td>Until deletion requested</td></tr>
+  <tr><td>Score (integer)</td><td>All-time: until deletion requested · Daily: 30 days</td></tr>
+</table>
+<p>We do not store your name, email, phone number, location, or any other personally identifying information.</p>
+
+<h2>Data stored on your device only</h2>
+<p>The following data is stored locally on your device and is never sent to us:</p>
+<ul>
+  <li>High score and last 10 runs</li>
+  <li>Ad cadence counters</li>
+  <li>Remove Ads purchase flag</li>
+  <li>Ad tracking consent status</li>
+</ul>
+<p>You can delete this data at any time by uninstalling the app or clearing the app's storage in your device settings.</p>
+
+<h2>How to request deletion of server data</h2>
+<div class="steps">
+  <ol>
+    <li>Send an email to <a href="mailto:saimcan.sesigur@gmail.com">saimcan.sesigur@gmail.com</a></li>
+    <li>Include the subject line: <strong>Data Deletion Request — Whoosh Balloon</strong></li>
+    <li>If you know your in-game display name, include it in the email to help us locate your data</li>
+    <li>We will delete your Player ID, display name, and all associated scores from our database</li>
+    <li>You will receive a confirmation email within <strong>48 hours</strong></li>
+  </ol>
+</div>
+
+<h2>What gets deleted</h2>
+<table>
+  <tr><th>Data</th><th>Action</th><th>Timeframe</th></tr>
+  <tr><td>Player ID</td><td>Permanently deleted from server</td><td>Within 48 hours</td></tr>
+  <tr><td>Display name</td><td>Permanently deleted from server</td><td>Within 48 hours</td></tr>
+  <tr><td>All-time score</td><td>Permanently deleted from server</td><td>Within 48 hours</td></tr>
+  <tr><td>Daily scores</td><td>Permanently deleted from server</td><td>Within 48 hours</td></tr>
+  <tr><td>Local device data</td><td>Uninstall the app or clear app storage</td><td>Immediate</td></tr>
+</table>
+
+<h2>Contact</h2>
+<div class="contact">
+  <p><strong>Email:</strong> <a href="mailto:saimcan.sesigur@gmail.com">saimcan.sesigur@gmail.com</a></p>
+  <p><strong>Developer:</strong> Saimcan Sesigur</p>
+  <p><a href="/">Privacy Policy</a> · <a href="/support.html">Support</a></p>
+</div>
+
+</body>
+</html>
